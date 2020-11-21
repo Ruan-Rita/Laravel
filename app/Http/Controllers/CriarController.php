@@ -28,4 +28,15 @@ class CriarController extends Controller
 
         return view('funcionario',['funcionario' => $funcionario]);
     }
+
+    public function store(Request $request){
+        $funcionario = new Funcionario;
+        $funcionario->Nome = $request->name;
+        $funcionario->email = $request->email;
+        $funcionario->tel = $request->number;
+        $funcionario->senha = $request->password;
+        $funcionario->save();
+
+        return redirect('/');
+    }
 }

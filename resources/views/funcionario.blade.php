@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="/css/funcionario.css">
 @endsection
 @section('content')
-<table class="table">
+
+<div class="col-md-6 offset-md-3">
+  <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Tell</th>
       </tr>
     </thead>
     <tbody>
@@ -26,4 +28,6 @@
       @endforeach      
     </tbody>
   </table>
+</div>
+
 @endsection

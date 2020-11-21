@@ -18,6 +18,9 @@ Route::get('/',[CriarController::class, 'index'] );
 Route::get('/Criar',[CriarController::class, 'create'] );
 Route::get('/Funcionario',[CriarController::class, 'all'] );
 
+Route::post('/Criar',[CriarController::class, 'store'] );
+
+
 Route::get('/login', function () {
     $nome = "ruan"; 
     $idade = 10;
