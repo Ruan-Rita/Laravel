@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CriarController;
+use App\Http\Controllers\Send_ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,9 @@ Route::get('/Criar',[CriarController::class, 'create'] );
 Route::get('/Funcionario',[CriarController::class, 'all'] );
 
 Route::post('/Criar',[CriarController::class, 'store'] );
+
+Route::get('/Enviar-Imagem',[Send_ImageController::class, 'index'] );
+Route::post('/Enviar-Imagem',[Send_ImageController::class, 'store']);
 
 
 Route::get('/login', function () {

@@ -25,7 +25,7 @@
                         <a href="/Funcionario" class="nav-link">Funcionario</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Cadastrar</a>
+                        <a href="/Enviar-Imagem" class="nav-link">Enviar Imagem</a>
                     </li>
                 </ul>     
             </div>
