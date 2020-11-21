@@ -37,6 +37,6 @@ class CriarController extends Controller
         $funcionario->senha = $request->password;
         $funcionario->save();
 
-        return redirect('/');
+        return redirect('/')->with('response', 'Foi Efetuado o Cadastro ! ! !');
     }
 }

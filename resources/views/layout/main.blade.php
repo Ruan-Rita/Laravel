@@ -31,7 +31,17 @@
             </div>
         </nav>
     </header>
-    @yield('content')
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if (session('response'))
+                    <script>alert('{{session('response')}}')</script>
+                @endif
+                @yield('content')
+            </div>
+        </div>
+    </main>
+  
     <footer>
         <div>
             <p>&copy; copyRight 2020</p>
